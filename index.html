@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm a Creative Student 👋</h1>
+      <p>Welcome to my personal website where I share my hobbies, skills, and passion!</p>
+      <a href="#about" class="btn">Explore More ↓</a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate first-year BTech student who loves to explore creativity through hobbies like drawing, coding, and reading. I'm always eager to learn new things and build cool stuff using technology and art.</p>
+    </section>
+
+    <section id="hobbies">
+      <h2>My Hobbies</h2>
+      <div class="hobby-list">
+        <div class="hobby-card">
+          <h3>🎮 Gaming</h3>
+          <p>Gaming improves my strategic thinking and reaction speed.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🎨 Drawing</h3>
+          <p>I enjoy drawing cartoons, nature, and digital art.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>📚 Reading</h3>
+          <p>I love reading fiction, history, and motivational books.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>💻 Coding</h3>
+          <p>Web development and simple Python scripts are my favorites.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🎧 Music</h3>
+          <p>Listening to music relaxes my mind and boosts my mood.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Tools I Use</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (Basics)</li>
+        <li>GitHub & VS Code</li>
+      <!---  <li>AI Tools like ChatGPT</li>-->
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>My Gallery</h2>
+      <div class="gallery">
+              <img src="colorful-abstract-acrylic-painting-natural-dynamic-mixture-colors-flow-background-30555980.webp" alt="Artwork 1" />
+              <img src="og_clashofclans.f3149338.jpg" alt="Gaming"/>
+              <img src="premium_photo-1677567996070-68fa4181775a.jpg" alt="Books" />
+              <img src="istockphoto-537331500-612x612.jpg" alt="Coding" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+<!--  <footer>
+    <p>© 2025 My Hobbies Website. All rights reserved.</p>
+  </footer>--> 
+
+  <button onclick="scrollToTop()" id="scrollTopBtn">↑</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrollTopBtn');
+    btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+  </script>
+</body>
+</html>
